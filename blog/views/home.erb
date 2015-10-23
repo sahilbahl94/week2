@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Blog Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1><%= @title %></h1>
+	<ul> 
+		<% @posts.each_with_index do |post,index| %>
+		<li> 
+			<a href="/post/<%= post.id %>">
+			<%= index %> ----- <%= post.title %> 
+			</a>
+		</li>
+		<% end %>
+		<br>
+		<li> 
+			<a href="/create_post">
+			Create a new post
+			</a>
+		</li>
+
+	</ul>
+</body>
+</html>

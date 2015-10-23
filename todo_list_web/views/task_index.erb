@@ -1,0 +1,17 @@
+<head>
+	<link rel="stylesheet" href="">
+</head>
+
+<h1> <%= @title %> </h1>
+
+<ul>
+	<% @return_array.each do |task| %>
+		<li> <%= task.content %> 
+		<form action="/complete/<%=task.id%>" method="POST" >
+			<button type="checkbox" name="button"></button>
+		</form>
+		</li>
+		<% end %>
+	<li> <a href="/new_task"> Add New Task</a> </li>
+</ul>
+

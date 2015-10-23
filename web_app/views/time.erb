@@ -1,0 +1,13 @@
+<h1>Current Time</h1>
+
+<p>
+	<%= @current_time.strftime("%A %d %B %y     %I:%M:%S %P %z") %>
+</p>
+
+<h2> My 3 Cats</h2>
+
+<ul>
+	<% @cats_list.each_with_index do |cat, index| %>
+	<li> <%= index %>, <%= cat%> </li>
+	<% end %>
+</ul>

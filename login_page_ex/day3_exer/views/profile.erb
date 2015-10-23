@@ -1,0 +1,9 @@
+<h1> 
+Welcome to your profile page! </h1>
+
+<% if session[:logged_in] == true %>
+<p>Very sensitive information</p>
+<% end %>
+
+<a href="/logout"> <button type="sumbit">Logout</button>
+</a>

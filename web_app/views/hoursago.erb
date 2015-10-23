@@ -1,0 +1,15 @@
+<head>
+	<title> New Sinatra Webpage</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+	<h1>Current Time</h1>	
+
+	<p>	The time <%= @hours %> hours ago was</p>
+		
+	<p><%= @time_past.strftime("%c") %></p>
+
+	<img class = "cat" src="/cool_image.png">
+</body>
+
